@@ -61,10 +61,21 @@ while(again.ToLower() == "a" )
         while (number > 0)
         {
            digit = number % 10; //Modulo 10 - získáme poslední číslici
-           sum = sum + digit;
+           sum = sum + digit;   // přičtení číslice k celkovému součtu
+
+           Console.WriteLine($"Získaná číslice: {digit}");
+
+           number = number  / 10; // celočíselné dělení 10 odstraní poslední číslici
+
         }
     }
     
+
+//výpis výsledků
+Console.WriteLine();
+Console.WriteLine("=============================");
+Console.WriteLine($"Součet číslic čísla {numberBackup} je {sum}");
+
 
     // Dotaz směrem k uživateli na opakování
     Console.WriteLine();
@@ -75,3 +86,4 @@ while(again.ToLower() == "a" )
     Console.Write("Chcete program spustit znovu? ");
     again = Console.ReadLine() ?? "";
 }
+
