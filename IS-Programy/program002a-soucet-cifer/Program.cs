@@ -1,4 +1,4 @@
-﻿﻿Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Hello, World!");
 ﻿string again = "a";
 
 // Řídící cyklus programu
@@ -39,7 +39,31 @@ while(again.ToLower() == "a" )
     int numberBackup = number;
     int sum = 0;    // Neutrální hodnota pro sčítání je 0
     int digit;      // Proměnná pro uložení právě zjištěné číslice
-    
+
+    //ošetření záporných čísel (znaménko má vliv na číslice)
+    if (number < 0)
+    {
+        number = -number; // Záporné číslo převedeme na kladné
+    }
+
+    // zvláštní případ pro nulu
+    if (number == 0)
+    {
+        sum = 0;
+    }
+    else
+    {
+        Console.WriteLine();
+        Console.WriteLine("Průběh rozkladu čísla na číslice(zprava doleva)");
+
+        //Matematický rozklad čísla pomocí cyklu
+        //využíváme operaci modulo - což je  určení zbytku po celočíselném dělení
+        while (number > 0)
+        {
+           digit = number % 10; //Modulo 10 - získáme poslední číslici
+           sum = sum + digit;
+        }
+    }
     
 
     // Dotaz směrem k uživateli na opakování
