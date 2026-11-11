@@ -1,0 +1,15 @@
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\bin\Debug\net10.0\Program003b-treti-obrazec.exe
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\bin\Debug\net10.0\Program003b-treti-obrazec.deps.json
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\bin\Debug\net10.0\Program003b-treti-obrazec.runtimeconfig.json
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\bin\Debug\net10.0\Program003b-treti-obrazec.dll
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\bin\Debug\net10.0\Program003b-treti-obrazec.pdb
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\Program003b-treti-obrazec.GeneratedMSBuildEditorConfig.editorconfig
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\Program003b-treti-obrazec.AssemblyInfoInputs.cache
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\Program003b-treti-obrazec.AssemblyInfo.cs
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\Program003b-treti-obrazec.csproj.CoreCompileInputs.cache
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\Program003b-treti-obrazec.sourcelink.json
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\Program003b-treti-obrazec.dll
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\refint\Program003b-treti-obrazec.dll
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\Program003b-treti-obrazec.pdb
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\Program003b-treti-obrazec.genruntimeconfig.cache
+C:\aaa\github-ns-is-2026-sk1\IS-Programy\Program003b-treti-obrazec\obj\Debug\net10.0\ref\Program003b-treti-obrazec.dll
