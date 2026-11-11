@@ -4,6 +4,7 @@
 // ToLower() převede vstup na malá písmena, takže program pokračuje při zadání "a" i "A"  
 // Jakýkoli jiný vstup program ukončí
 while(again.ToLower() == "a" )
+
 {
     // Vymazání konzole
     Console.Clear();
@@ -16,7 +17,6 @@ while(again.ToLower() == "a" )
     Console.WriteLine("********************************************");
     Console.WriteLine();
     Console.WriteLine();
-
     
      // Načtení výšky 
     Console.Write("Zadejte výšku obrazce (celé kladné číslo): ");
@@ -36,15 +36,6 @@ while(again.ToLower() == "a" )
 
     // Zde budeme pokračovat konkrétním algoritmem
     // *
-
-
-
-
-
-
-
-
-
 
     // Jádro vykreslení algoritmu
     // Vnější cyklus - počet řádků
@@ -83,7 +74,6 @@ for (int i = 0; i < height; i++)
 System.Threading.Thread.Sleep(System.TimeSpan.FromMilliseconds(300)); // Zpoždění - program v tuto chvíli čeká
     Console.WriteLine();
 }
-
     // Dotaz směrem k uživateli na opakování
     Console.WriteLine();
     Console.WriteLine();
