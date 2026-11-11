@@ -11,7 +11,7 @@ while (again.ToLower() == "a")
 
     //hlavička programu
     Console.WriteLine("**********************************************");
-    Console.WriteLine("******************Výpis z řady****************");
+    Console.WriteLine("******************součet cifer****************");
     Console.WriteLine("**********************************************");
     Console.WriteLine("*****************Natálie Slabá****************");
     Console.WriteLine("**********************************************");
