@@ -1,4 +1,4 @@
-﻿﻿string again = "a";
+﻿string again = "a";
 
 // Řídící cyklus programu
 // ToLower() převede vstup na malá písmena, takže program pokračuje při zadání "a" i "A"  
@@ -34,8 +34,6 @@ while(again.ToLower() == "a" )
         Console.Write("Nezadali jste celé kladné číslo. Zadejte číslo znovu: ");
         Console.ResetColor();
     }
-    }
-
     // Rekapitulace zadaných hodnot
     Console.WriteLine();
     Console.WriteLine("=============================");
@@ -45,7 +43,28 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
 
     // Zde budeme pokračovat konkrétním algoritmem
-    
+    // *
+
+
+
+
+
+
+
+
+
+
+    // Jádro vykreslení algoritmu
+    // Vnější cyklus, kteý nám bude hlídat počet řádků (shora dolů)
+    for(int i=1; i <= height; i++)
+    {
+       //vnitřní cyklus, který se nám postará o to, aby se v každém řádku vykreslil správný počet znaků
+        for(int j = 1; j <= width; j++)
+        {
+            Console.Write("* ");
+        }
+       Console.WriteLine();
+    }
 
     // Dotaz směrem k uživateli na opakování
     Console.WriteLine();
