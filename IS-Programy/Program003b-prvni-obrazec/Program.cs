@@ -9,23 +9,15 @@ while(again.ToLower() == "a" )
     Console.Clear();
     
     // Hlavička programu
-    Console.WriteLine("**********************************+++++***");
+    Console.WriteLine("********************************************");
     Console.WriteLine("************ vykreslování obrazce N ********");
-    Console.WriteLine("******************************************");
-    Console.WriteLine("*********** Natáie Slabá *****************");
-    Console.WriteLine("******************************************");
+    Console.WriteLine("********************************************");
+    Console.WriteLine("*********** Natáie Slabá *******************");
+    Console.WriteLine("********************************************");
     Console.WriteLine();
     Console.WriteLine();
 
-    // Načtení šířky 
-    Console.Write("Zadejte šířku obrazce (celé kladné číslo): ");
-    int width;
-    while(!int.TryParse(Console.ReadLine(), out width) || width <= 0) {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write("Nezadali jste celé kladné  číslo. Zadejte číslo znovu: ");
-         Console.ResetColor();
-    }
-
+    
      // Načtení výšky 
     Console.Write("Zadejte výšku obrazce (celé kladné číslo): ");
     int height;
@@ -37,7 +29,7 @@ while(again.ToLower() == "a" )
     // Rekapitulace zadaných hodnot
     Console.WriteLine();
     Console.WriteLine("=============================");
-    Console.WriteLine($"Šířka: {width}; Výška: {height};");
+    Console.WriteLine($"Výška: {height};");
     Console.WriteLine("=============================");
     Console.WriteLine();
     Console.WriteLine();
@@ -56,25 +48,22 @@ while(again.ToLower() == "a" )
 
     // Jádro vykreslení algoritmu
     // Vnější cyklus, kteý nám bude hlídat počet řádků (shora dolů)
-    for(int i=1; i <= height; i++)
-    {
-    if (i % 2 == 0)
-    {
-        Console.ForegroundColor = ConsoleColor.Blue;
-    }
-    else
-    {
-        Console.ForegroundColor = ConsoleColor.Green;
-    }
-        
-       //vnitřní cyklus, který se nám postará o to, aby se v každém řádku vykreslil správný počet znaků
-        for(int j = 1; j <= width; j++)
+    for(int i=0; i < height; i++)
+    {  
+       //vnitřní cyklus, který vykreslí počet sloupců
+        for(int j = 0; j < height; j++)
+       // Levá strana, pravá strana a uhlopříčka
+        if (j == 0 || j == height-1 || j == i)
         {
             Console.Write("* ");
-            System.Threading.Thread.Sleep(System.TimeSpan.FromMilliseconds(250)); // Zpoždění - program v tuto chvíli čeká
+    }
+        else
+        {
+            Console.Write("  ");
         }
-       Console.WriteLine();
-        Console.ResetColor();
+      System.Threading.Thread.Sleep(System.TimeSpan.FromMilliseconds(250)); // Zpoždění - program v tuto chvíli čeká
+      Console.WriteLine();
+    
     }
 
     // Dotaz směrem k uživateli na opakování
