@@ -10,7 +10,7 @@ while(again.ToLower() == "a" )
     
     // Hlavička programu
     Console.WriteLine("********************************************");
-    Console.WriteLine("************ vykreslování kosoobrazce ******");
+    Console.WriteLine("************ vykreslování hada ******");
     Console.WriteLine("********************************************");
     Console.WriteLine("*********** Natáie Slabá *******************");
     Console.WriteLine("********************************************");
