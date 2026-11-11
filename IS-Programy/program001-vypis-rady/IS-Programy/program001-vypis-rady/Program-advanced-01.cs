@@ -67,4 +67,5 @@ while (again.ToLower() == "a")
     Console.WriteLine();
     Console.Write("Pro opakování programu stiskněte 'a' a potvrďte klávesou Enter: ");
     again = Console.ReadLine() ?? "";
+    
 }
