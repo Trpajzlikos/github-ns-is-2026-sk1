@@ -10,7 +10,7 @@ while(again.ToLower() == "a" )
     
     // Hlavička programu
     Console.WriteLine("********************************************");
-    Console.WriteLine("************ vykreslování obrazce N ********");
+    Console.WriteLine("************ vykreslování kosoobrazce ******");
     Console.WriteLine("********************************************");
     Console.WriteLine("*********** Natáie Slabá *******************");
     Console.WriteLine("********************************************");
@@ -50,25 +50,37 @@ while(again.ToLower() == "a" )
     // Vnější cyklus - počet řádků
 for (int i = 0; i < height; i++)
 {
-    // Určí vzdálenost od horního nebo dolního okraje
-    int vzdalenost = Math.Min(i, height - 1 - i);
-
-    // Vnitřní cyklus - počet sloupců
+    // Vnitřní cyklus - sloupce
     for (int j = 0; j < height; j++)
     {
-        if (j >= height / 2 - 1 - vzdalenost &&
-            j <= height / 2 + vzdalenost)
+        if (i < height / 2)
         {
-            Console.Write("* ");
+            // Horní polovina
+            if (j >= height / 2 - 1 - i &&
+                j <= height / 2 + i)
+            {
+                Console.Write("* ");
+            }
+            else
+            {
+                Console.Write("  ");
+            }
         }
         else
         {
-            Console.Write("  ");
+            // Dolní polovina
+            if (j >= i - height / 2 &&
+                j < height + height / 2 - i)
+            {
+                Console.Write("* ");
+            }
+            else
+            {
+                Console.Write("  ");
+            }
         }
-
-        System.Threading.Thread.Sleep(250);
     }
-
+System.Threading.Thread.Sleep(System.TimeSpan.FromMilliseconds(300)); // Zpoždění - program v tuto chvíli čeká
     Console.WriteLine();
 }
 
