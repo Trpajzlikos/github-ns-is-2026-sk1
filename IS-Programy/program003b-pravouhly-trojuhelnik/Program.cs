@@ -17,7 +17,6 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
     Console.WriteLine();
 
-    
      // Načtení výšky 
     Console.Write("Zadejte výšku obrazce (celé kladné číslo): ");
     int height;
@@ -45,7 +44,7 @@ while(again.ToLower() == "a" )
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
     }
-    else
+    else 
     {
         Console.ForegroundColor = ConsoleColor.Magenta;
     }
@@ -69,4 +68,5 @@ while(again.ToLower() == "a" )
     Console.WriteLine();
     Console.Write("Chcete program spustit znovu? ");
     again = Console.ReadLine() ?? "";
+    
 }
