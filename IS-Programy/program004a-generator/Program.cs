@@ -56,15 +56,42 @@ int[]myRandNumbs = new int [n];
 Random myRandNumb = new Random();
 //Random myRandNumb = new Random(50);
 
+int positiveNumbs = 0;
+int negativeNumbs = 0;
+int zero = 0;
+
 // Generování náhodných čísel a jejich uložení do pole
 Console.WriteLine("Vygenerovaná pseudonáhodná čísla:");
 for (int i = 0; i < myRandNumbs.Length; i++)
 {
     //
-    myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound + 1);
+   
+   myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound + 1);
     Console.Write($"{myRandNumbs[i]};");
-}
+    /*
+    if (myRandNumbs[i] < 0)
+    negativeNumbs++;
+ if (myRandNumbs[i] > 0)
+ positiveNumbs++;
+    if (myRandNumbs[i] == 0)
+    zero++;*/
+    
 
+    //eketkivnější zápis
+    if (myRandNumbs[i] < 0)
+        negativeNumbs++;
+    else if (myRandNumbs[i] > 0)
+        positiveNumbs++;
+    else
+        zero++;
+    
+
+}
+Console.WriteLine();
+ Console.WriteLine("==============================================");
+ Console.WriteLine($"POČET ZÁPORNÝCH ČÍSEL: {negativeNumbs}");
+ Console.WriteLine($"POČET Kladných ČÍSEL: {positiveNumbs}");
+ Console.WriteLine($"POČET NUL: {zero}");
 
 
 
