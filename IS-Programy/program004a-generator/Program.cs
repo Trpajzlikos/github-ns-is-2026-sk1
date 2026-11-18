@@ -85,6 +85,7 @@ for (int i = 0; i < myRandNumbs.Length; i++)
     else
         zero++;
     
+    
 
 }
 Console.WriteLine();
