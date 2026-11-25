@@ -99,6 +99,44 @@ Console.WriteLine();
  Console.WriteLine($"Pozice prvního minima: {posMin}");
 
 
+//vykreslení přesýpacích hodin
+if (max >= 3)
+    {
+        //vnější cyklus řídící vykreslování jednotlivých řádků
+      for ( int i = 0; i < max; i++)
+        {
+            int spaces = 0; // proměnná pro počet uvodních mezer
+            int starr = 0; // proměnná pro počet hvězdiček v řádku
+            if(i < max / 2)
+            {
+                //horní polovina
+                // počet mezer je přímo úměrný proměnné i
+                spaces = i;
+                //počet hvězdiček ubývá o 2 na každém řádku
+                stars = max - (2 * i);
+            }
+            else
+            {
+                // dolní polovina
+                spaces = max - i - 1;
+                stars = 2 * (i - max / 2) + 1;
+                
+            }
+        }
+    }
+else
+    {
+        Console.WriteLine("Maximum je menší než 3 => obrazec se nevykreslí.");
+    }
+
+
+
+
+
+
+
+
+
     // Dotaz směrem k uživateli na opakování
     Console.WriteLine();
     Console.WriteLine();
