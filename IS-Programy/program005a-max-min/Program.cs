@@ -106,7 +106,7 @@ if (max >= 3)
       for ( int i = 0; i < max; i++)
         {
             int spaces = 0; // proměnná pro počet uvodních mezer
-            int starr = 0; // proměnná pro počet hvězdiček v řádku
+            int stars = 0; // proměnná pro počet hvězdiček v řádku
             if(i < max / 2)
             {
                 //horní polovina
@@ -117,11 +117,24 @@ if (max >= 3)
             }
             else
             {
-                // dolní polovina
-                spaces = max - i - 1;
+                // dolní polovina - dodělat doma
+                spaces = max - i;
                 stars = 2 * (i - max / 2) + 1;
-                
             }
+            // samostatné vykreslení aktuálního řádku
+            //nejprve vykreslujeme mezery
+            for (int sp = 0; sp < spaces; sp++)
+            {
+                Console.Write(" ");
+            }
+            // následně vykreslujeme hvězdičky
+            for (int st = 0; st < stars; st++)
+            {
+                Console.Write("*");
+            }
+            // přechod na další řádek, ale až po tom co vykreslíme potřebné znaky v i-tém řádku
+            Console.WriteLine();
+
         }
     }
 else
