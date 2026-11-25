@@ -79,14 +79,14 @@ for (int i = 0; i < myRandNumbs.Length; i++)
     zero++;*/
     
 
-    //eketkivnější zápis
+    //eketkivnější zápis - kladných, záporných a nulových čísel
     if (myRandNumbs[i] < 0)
         negativeNumbs++;
     else if (myRandNumbs[i] > 0)
         positiveNumbs++;
     else
         zero++;
-    
+    // Počet sudých a lichých čísel
     if (myRandNumbs[i] % 2 == 0)
         evenNumbs++;
     else
